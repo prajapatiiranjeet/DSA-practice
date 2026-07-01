@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0035-search-insert-position) |
 | [0240-search-a-2d-matrix-ii](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0240-search-a-2d-matrix-ii) |
 | [0875-koko-eating-bananas](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0875-koko-eating-bananas) |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1901-find-a-peak-element-ii](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1901-find-a-peak-element-ii) |
 ## Binary Search
@@ -21,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0035-search-insert-position) |
 | [0240-search-a-2d-matrix-ii](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0240-search-a-2d-matrix-ii) |
 | [0875-koko-eating-bananas](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0875-koko-eating-bananas) |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1901-find-a-peak-element-ii](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1901-find-a-peak-element-ii) |
 ## Divide and Conquer
