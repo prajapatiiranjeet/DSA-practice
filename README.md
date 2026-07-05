@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [1021-remove-outermost-parentheses](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1021-remove-outermost-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Math
@@ -99,4 +100,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0050-powx-n](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0050-powx-n) |
 | [1922-count-good-numbers](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/1922-count-good-numbers) |
+## Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0144-binary-tree-preorder-traversal) |
+## Depth-First Search
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0144-binary-tree-preorder-traversal) |
+## Binary Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/prajapatiiranjeet/DSA-practice/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
