@@ -1,37 +1,37 @@
+
 class Solution {
-    static long binsr(int[] piles , int speed){
-      
-        long hours = 0;
+    static int findmax(int[] piles){
+        int max =Integer.MIN_VALUE;
+          for(int n : piles){
+            max = Math.max(max , n);
+          }
+          return max;
 
-        for (int pile : piles) {
-            hours += (long)(pile + speed-1)/ speed;
-        }
-
-        return hours;
     }
-    public int minEatingSpeed(int[] piles, int h) {
-        // Arrays.sort(piles);
-        int l = 1;
-       int e = 0;
 
-for(int pile : piles){
-    e = Math.max(e, pile);
+   static long coco(int[] piles, int k){
+    long totalTime = 0;
+
+    for(int n : piles){
+        totalTime += (n + k - 1L) / k;
+    }
+
+    return totalTime;
 }
-        int speed = l + (e-l)/2;
-        int ans = -1;
-        while(l <= e){
-            speed = l + (e-l)/2;
-            long hour = binsr(piles,speed);
-            if(hour > h){
-             
-              
-               l = speed+1;
-            }
-            else{
-                ans = (int)(speed);
-                e = speed - 1;
-            }
+    public int minEatingSpeed(int[] piles, int hour) {
+        int l = 1;
+        int h = findmax(piles);
+
+        while(l<=h){
+            int mid = l + (h-l)/2;
+            long totaltime = coco(piles , mid);
+             if(totaltime <= hour){
+                h = mid - 1;
+             }else{
+                l = mid+1;
+             }
         }
-        return ans;
+
+        return l;
     }
 }
