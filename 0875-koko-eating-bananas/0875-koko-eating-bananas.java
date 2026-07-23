@@ -13,7 +13,7 @@ class Solution {
     long totalTime = 0;
 
     for(int n : piles){
-        totalTime += (n + k - 1L) / k;
+        totalTime += (n + k - 1) / k;
     }
 
     return totalTime;
