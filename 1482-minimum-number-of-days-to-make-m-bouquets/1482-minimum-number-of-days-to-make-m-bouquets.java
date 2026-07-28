@@ -1,45 +1,62 @@
 class Solution {
-    public int minDays(int[] bloomDay, int m, int k) {
-        long need = (long) m * k;
-        if (need > bloomDay.length) return -1;
 
-        int low = Integer.MAX_VALUE;
-        int high = Integer.MIN_VALUE;
-
-        for (int day : bloomDay) {
-            low = Math.min(low, day);
-            high = Math.max(high, day);
+    static int findmin(int[] arr){
+        int min = Integer.MAX_VALUE;
+        for(int x : arr){
+            min = Math.min(min, x);
         }
-
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-
-            if (canMake(bloomDay, m, k, mid)) {
-                high = mid;
-            } else {
-                low = mid + 1;
-            }
-        }
-
-        return low;
+        return min;
     }
 
-    private boolean canMake(int[] bloomDay, int m, int k, int day) {
-        int bouquets = 0;
-        int flowers = 0;
+    static int findmax(int[] arr){
+        int max = Integer.MIN_VALUE;
+        for(int x : arr){
+            max = Math.max(max, x);
+        }
+        return max;
+    }
 
-        for (int bloom : bloomDay) {
-            if (bloom <= day) {
-                flowers++;
-                if (flowers == k) {
+    static int findday(int[] arr, int k, int day){
+        int count = 0;
+        int bouquets = 0;
+
+        for(int x : arr){
+            if(x <= day){
+                count++;
+                if(count == k){
                     bouquets++;
-                    flowers = 0;
+                    count = 0;
                 }
-            } else {
-                flowers = 0;
+            }else{
+                count = 0;
+            }
+        }
+        return bouquets;
+    }
+
+    public int minDays(int[] bloomDay, int m, int k) {
+
+        if((long)m * k > bloomDay.length)
+            return -1;
+
+        int l = findmin(bloomDay);
+        int h = findmax(bloomDay);
+
+        int ans = -1;
+
+        while(l <= h){
+            int mid = l + (h - l) / 2;
+
+            int bouquets = findday(bloomDay, k, mid);
+
+            if(bouquets >= m){
+                ans = mid;
+                h = mid - 1;
+            }else{
+                l = mid + 1;
             }
         }
 
-        return bouquets >= m;
+        return ans;
     }
 }
